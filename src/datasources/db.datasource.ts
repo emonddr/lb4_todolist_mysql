@@ -14,7 +14,11 @@ const config = {
   user: 'some_user',
   password: 'some_password',
   database: 'some_database',
+  createDatabase: true,
 };
+
+// the 'createDatabase' setting is only available for mysql connector, I believe.
+// otherwise, you must create the database first, before running 'npm run migrate'
 
 // Observe application's life cycle to disconnect the datasource when
 // application is stopped. This allows the application to be shut down
